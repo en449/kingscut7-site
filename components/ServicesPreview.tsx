@@ -112,34 +112,34 @@ export default function ServicesPreview() {
                 {s.number}
               </span>
 
-              {/* Name */}
-              <h3
-                className="text-xl font-black uppercase mb-3 tracking-wide"
-                style={{ fontFamily: "var(--font-display)", color: "var(--color-text)" }}
-              >
-                {s.name}
-              </h3>
+              {/* Name + Price row */}
+              <div className="flex items-start justify-between gap-2 mb-3">
+                <h3
+                  className="text-xl font-black uppercase tracking-wide leading-tight"
+                  style={{ fontFamily: "var(--font-display)", color: "var(--color-text)" }}
+                >
+                  {s.name}
+                </h3>
+                <span
+                  className="shrink-0 text-sm font-bold px-3 py-1 rounded-sm"
+                  style={{
+                    fontFamily: "var(--font-ui)",
+                    background: "rgba(255,177,0,0.15)",
+                    color: "#FFD44F",
+                    border: "1px solid rgba(255,177,0,0.35)",
+                  }}
+                >
+                  {s.tag}
+                </span>
+              </div>
 
               {/* Desc */}
               <p
-                className="text-sm leading-relaxed mb-5"
+                className="text-sm leading-relaxed"
                 style={{ color: "var(--color-text-muted)", fontFamily: "var(--font-body)" }}
               >
                 {s.desc}
               </p>
-
-              {/* Tag */}
-              <span
-                className="inline-block text-[10px] uppercase tracking-widest px-3 py-1 rounded-sm font-semibold"
-                style={{
-                  fontFamily: "var(--font-ui)",
-                  background: "var(--color-neon-dim)",
-                  color: "var(--color-neon)",
-                  border: "1px solid rgba(255,177,0,0.15)",
-                }}
-              >
-                {s.tag}
-              </span>
 
               {/* Bottom neon accent line on hover */}
               <div
