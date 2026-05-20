@@ -109,7 +109,7 @@ export default function KingsHero() {
 
             <motion.p
               variants={fadeUp}
-              className="mt-5 mb-3 text-[clamp(1.2rem,3vw,1.65rem)] font-bold uppercase tracking-[0.12em]"
+              className="mt-4 mb-3 text-[clamp(1.6rem,4.5vw,2.4rem)] font-bold uppercase tracking-[0.12em]"
               style={{
                 fontFamily: "var(--font-display)",
                 color: "var(--color-text-muted)",
