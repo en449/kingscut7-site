@@ -49,7 +49,7 @@ export default function Nav() {
 
           {/* Logo */}
           <Link href="/" aria-label="KINGSCUT7 Startseite">
-            <div className="relative h-8 w-[148px]" style={{ flexShrink: 0 }}>
+            <div className="relative h-11 w-[200px]" style={{ flexShrink: 0 }}>
               <Image
                 src="/images/KINGSCUT7_Logo.png"
                 alt="KINGSCUT7"

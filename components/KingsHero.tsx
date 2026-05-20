@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Image from "next/image"
 import { staggerContainer, fadeUp, ctaButton } from "@/lib/motion"
 
 const WA_LINK = "https://wa.me/4951133772496"
@@ -56,14 +55,14 @@ export default function KingsHero() {
 
       {/* ── Main content ── */}
       <div className="relative w-full max-w-6xl mx-auto px-6 md:px-10 lg:px-16 py-20 md:py-0 min-h-screen flex items-center">
-        <div className="w-full flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
+        <div className="w-full">
 
-          {/* ─── Left: text ─── */}
+          {/* ─── Text ─── */}
           <motion.div
             variants={staggerContainer}
             initial="hidden"
             animate="visible"
-            className="flex-1 min-w-0"
+            className="max-w-3xl"
           >
             {/* Location badge */}
             <motion.p
@@ -193,62 +192,6 @@ export default function KingsHero() {
                 5,0 · 11 Bewertungen · Google
               </span>
             </motion.div>
-          </motion.div>
-
-          {/* ─── Right: neon logo ─── */}
-          <motion.div
-            className="flex-shrink-0 flex flex-col items-center justify-center lg:w-[400px] xl:w-[460px]"
-            initial={{ opacity: 0, x: 32 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
-          >
-            {/* Ambient glow bloom behind logo */}
-            <div
-              className="absolute pointer-events-none"
-              style={{
-                width: "480px",
-                height: "220px",
-                background:
-                  "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(255,177,0,0.12) 0%, rgba(255,92,0,0.05) 55%, transparent 80%)",
-                filter: "blur(24px)",
-              }}
-            />
-
-            {/* Logo — screen blend to knock out black background */}
-            <motion.div
-              animate={{ opacity: [0.88, 1, 0.88] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="relative"
-              style={{ width: "360px", height: "90px" }}
-            >
-              <Image
-                src="/images/KINGSCUT7_Logo.png"
-                alt="KINGSCUT7"
-                fill
-                className="object-contain"
-                priority
-                style={{
-                  mixBlendMode: "screen",
-                  filter:
-                    "drop-shadow(0 0 8px #FFD44F) drop-shadow(0 0 20px #FFB100) drop-shadow(0 0 45px rgba(255,120,0,0.6))",
-                }}
-              />
-            </motion.div>
-
-            {/* Thin neon underline */}
-            <motion.div
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.7 }}
-              style={{
-                marginTop: "18px",
-                height: "1px",
-                width: "360px",
-                background: "linear-gradient(90deg, transparent 0%, #FFB100 40%, #FF5C00 60%, transparent 100%)",
-                boxShadow: "0 0 10px rgba(255,177,0,0.5)",
-                transformOrigin: "left",
-              }}
-            />
           </motion.div>
 
         </div>
