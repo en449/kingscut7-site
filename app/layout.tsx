@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Barlow_Condensed, Space_Grotesk, Inter } from "next/font/google"
+import ScrollReset from "@/components/ScrollReset"
 import "./globals.css"
 
 const barlow = Barlow_Condensed({
@@ -45,6 +46,7 @@ export default function RootLayout({
       className={`${barlow.variable} ${space.variable} ${inter.variable}`}
     >
       <body className="min-h-screen flex flex-col antialiased" suppressHydrationWarning>
+        <ScrollReset />
         {children}
       </body>
     </html>

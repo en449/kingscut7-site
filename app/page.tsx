@@ -8,10 +8,12 @@ import Reviews from "@/components/Reviews"
 import BookingCTA from "@/components/BookingCTA"
 import Location from "@/components/Location"
 import Footer from "@/components/Footer"
+import PromoPopup from "@/components/PromoPopup"
 
 export default function Home() {
   return (
     <>
+      <PromoPopup />
       <Nav />
       <main>
         <KingsHero />

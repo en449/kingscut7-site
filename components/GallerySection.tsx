@@ -4,10 +4,10 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion"
 
-// Add filenames here after dropping photos into public/images/gallery/
 const galleryImages: { src: string; alt: string }[] = [
-  // { src: "/images/gallery/cut-01.jpg", alt: "Haarschnitt von KINGSCUT7" },
-  // { src: "/images/gallery/cut-02.jpg", alt: "Fade von KINGSCUT7" },
+  { src: "/images/gallery/cut-01.jpg", alt: "Haarschnitt von KINGSCUT7" },
+  { src: "/images/gallery/cut-02.jpg", alt: "Fade von KINGSCUT7" },
+  { src: "/images/gallery/cut-03.jpg", alt: "Cut von KINGSCUT7" },
 ]
 
 export default function GallerySection() {
