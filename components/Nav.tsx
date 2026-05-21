@@ -49,18 +49,14 @@ export default function Nav() {
 
           {/* Logo */}
           <Link href="/" aria-label="KINGSCUT7 Startseite">
-            <div className="relative h-11 w-[200px]" style={{ flexShrink: 0 }}>
+            <div className="relative h-14 w-[240px]" style={{ flexShrink: 0 }}>
               <Image
                 src="/images/KINGSCUT7_Logo.png"
                 alt="KINGSCUT7"
                 fill
                 className="object-contain"
                 priority
-                style={{
-                  mixBlendMode: "screen",
-                  filter:
-                    "drop-shadow(0 0 6px #FFD44F) drop-shadow(0 0 14px #FFB100) drop-shadow(0 0 28px rgba(255,140,0,0.5))",
-                }}
+                style={{ mixBlendMode: "screen" }}
               />
             </div>
           </Link>

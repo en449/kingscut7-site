@@ -5,9 +5,9 @@ import Image from "next/image"
 import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion"
 
 const founders = [
-  { name: "Hasib" },
-  { name: "Moeez" },
-  { name: "Toni" },
+  { name: "Hasib", role: "Barber" },
+  { name: "Moeez", role: "Gründer / Barber" },
+  { name: "Toni",  role: "Barber" },
 ]
 
 export default function TeamSection() {
@@ -112,7 +112,7 @@ export default function TeamSection() {
                 className="mt-1 text-[10px] uppercase tracking-[0.3em]"
                 style={{ fontFamily: "var(--font-ui)", color: "var(--color-text-muted)" }}
               >
-                Gründer
+                {f.role}
               </span>
             </motion.div>
           ))}
