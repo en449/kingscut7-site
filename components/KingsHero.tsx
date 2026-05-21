@@ -82,25 +82,40 @@ export default function KingsHero() {
               variants={fadeUp}
               style={{ fontFamily: "var(--font-display)", fontWeight: 900 }}
             >
+              {/* Mobile: 2 lines */}
               <span
-                className="block text-[clamp(4rem,11vw,9rem)] leading-none"
+                className="block md:hidden text-[2.9rem] leading-[1.05]"
+                style={{ color: "var(--color-text)" }}
+              >
+                KINGS <span className="neon-text">WERDEN</span>
+              </span>
+              <span
+                className="block md:hidden text-[2.9rem] leading-[1.05]"
+                style={{ color: "var(--color-text)" }}
+              >
+                NICHT GEBOREN.
+              </span>
+
+              {/* Desktop: 4 lines */}
+              <span
+                className="hidden md:block text-[clamp(4rem,11vw,9rem)] leading-none"
                 style={{ color: "var(--color-text)" }}
               >
                 KINGS
               </span>
               <span
-                className="block text-[clamp(4rem,11vw,9rem)] leading-none neon-text"
+                className="hidden md:block text-[clamp(4rem,11vw,9rem)] leading-none neon-text"
               >
                 WERDEN
               </span>
               <span
-                className="block text-[clamp(4rem,11vw,9rem)] leading-none"
+                className="hidden md:block text-[clamp(4rem,11vw,9rem)] leading-none"
                 style={{ color: "var(--color-text)" }}
               >
                 NICHT
               </span>
               <span
-                className="block text-[clamp(4rem,11vw,9rem)] leading-none"
+                className="hidden md:block text-[clamp(4rem,11vw,9rem)] leading-none"
                 style={{ color: "var(--color-text)" }}
               >
                 GEBOREN.
