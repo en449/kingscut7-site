@@ -33,13 +33,13 @@ export default function TrustStrip() {
             className="flex flex-col items-center text-center gap-1"
           >
             <span
-              className="text-2xl md:text-3xl font-black leading-none neon-text-sm"
+              className="text-lg md:text-3xl font-black leading-none neon-text-sm"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {item.value}
             </span>
             <span
-              className="text-[12px] uppercase tracking-widest"
+              className="text-[10px] md:text-[12px] uppercase tracking-widest"
               style={{ fontFamily: "var(--font-ui)", color: "var(--color-text-muted)" }}
             >
               {item.label}
