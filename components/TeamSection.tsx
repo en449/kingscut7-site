@@ -109,7 +109,7 @@ export default function TeamSection() {
                 {f.name}
               </span>
               <span
-                className="mt-1 text-[10px] uppercase tracking-[0.3em]"
+                className="mt-1 text-[9px] uppercase tracking-[0.15em] text-center leading-tight"
                 style={{ fontFamily: "var(--font-ui)", color: "var(--color-text-muted)" }}
               >
                 {f.role}
