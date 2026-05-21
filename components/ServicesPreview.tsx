@@ -6,39 +6,33 @@ import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion"
 const services = [
   {
     number: "01",
-    name: "Herrenhaarschnitt",
-    desc: "Klassisch oder modern — jeder Schnitt sitzt. Wir nehmen uns die Zeit, die dein Look verdient.",
-    tag: "Ab €18",
+    name: "Haarschnitt",
+    desc: "Klassisch oder modern — jeder Schnitt sitzt. Präzision, die man sieht.",
+    tag: "18€",
   },
   {
     number: "02",
-    name: "Fade & Skin Fade",
-    desc: "Von Mid Fade bis Skin Fade. Saubere Übergänge, maximaler Kontrast — das ist unser Standard.",
-    tag: "Inklusive",
+    name: "Haare & Bart",
+    desc: "Cut und Bart in einem. Kompletter Look, ein Preis — das volle Paket.",
+    tag: "30€",
   },
   {
     number: "03",
-    name: "Bart & Trimmen",
-    desc: "Konturen, Shaping, Pflege. Dein Bart bekommt dieselbe Präzision wie dein Cut.",
-    tag: "Auf Anfrage",
+    name: "Kinderhaarschnitt",
+    desc: "Geduldig, sauber, kinderfreundlich. Für die kleinen Kings.",
+    tag: "15€",
   },
   {
     number: "04",
-    name: "Design Lines",
-    desc: "Sharplines, Konturenschnitt, individuelle Designs. Für alle, die auffallen wollen.",
-    tag: "Auf Anfrage",
+    name: "Bart",
+    desc: "Konturenschnitt, Shaping, Pflege. Dein Bart bekommt dieselbe Präzision wie dein Cut.",
+    tag: "12€",
   },
   {
     number: "05",
-    name: "Kinderhaarschnitt",
-    desc: "Geduldig, sauber, kinderfreundlich. Für Jungs bis 14 Jahre.",
-    tag: "Ab €14",
-  },
-  {
-    number: "06",
-    name: "Komplettpaket",
-    desc: "Schnitt + Bart + Styling in einem. Komm rein, geh raus als King.",
-    tag: "Kombi-Deal",
+    name: "Augenbrauen",
+    desc: "Details machen den King. Sauber geformte Brauen als letzter Schliff.",
+    tag: "5€",
   },
 ]
 
@@ -162,7 +156,7 @@ export default function ServicesPreview() {
           className="mt-12 text-center"
         >
           <a
-            href="https://wa.me/4951133772496"
+            href="https://wa.me/4915567073622"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 text-sm font-semibold uppercase tracking-widest rounded-sm"

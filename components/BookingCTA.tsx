@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { ctaButton, viewportOnce } from "@/lib/motion"
 
-const WA_LINK = "https://wa.me/4951133772496"
+const WA_LINK = "https://wa.me/4915567073622"
 
 export default function BookingCTA() {
   return (

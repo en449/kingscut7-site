@@ -11,7 +11,7 @@ const navLinks = [
   { href: "/#standort", label: "Standort" },
 ]
 
-const WA_LINK = "https://wa.me/4951133772496"
+const WA_LINK = "https://wa.me/4915567073622"
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
