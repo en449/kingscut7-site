@@ -67,9 +67,9 @@ export default function ServicesPreview() {
             className="text-[clamp(2.8rem,7vw,5.5rem)] leading-none font-black uppercase"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            DEINE
+            UNSERE
             <br />
-            <span className="neon-text">BEHANDLUNG.</span>
+            <span className="neon-text">LEISTUNGEN.</span>
           </h2>
         </motion.div>
 
