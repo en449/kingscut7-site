@@ -63,21 +63,21 @@ export default function PromoPopup() {
               <button
                 onClick={dismiss}
                 aria-label="Schließen"
-                className="absolute top-3 right-3 z-10 flex items-center justify-center w-7 h-7 rounded-sm transition-colors"
+                className="absolute top-3 right-3 z-10 flex items-center justify-center w-10 h-10 rounded-sm transition-colors"
                 style={{
-                  background: "rgba(7,7,10,0.7)",
-                  border: "1px solid rgba(255,177,0,0.3)",
-                  color: "var(--color-neon)",
+                  background: "rgba(7,7,10,0.85)",
+                  border: "1px solid rgba(255,177,0,0.5)",
+                  color: "#FFD44F",
                 }}
                 onMouseEnter={(e) => {
-                  ;(e.currentTarget as HTMLElement).style.background = "rgba(255,177,0,0.15)"
+                  ;(e.currentTarget as HTMLElement).style.background = "rgba(255,177,0,0.2)"
                 }}
                 onMouseLeave={(e) => {
-                  ;(e.currentTarget as HTMLElement).style.background = "rgba(7,7,10,0.7)"
+                  ;(e.currentTarget as HTMLElement).style.background = "rgba(7,7,10,0.85)"
                 }}
               >
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden>
-                  <path d="M1 1l8 8M9 1L1 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
+                  <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </button>
 
