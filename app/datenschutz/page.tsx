@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import CookieRevoke from "@/components/CookieRevoke"
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung — KINGSCUT7",
@@ -70,27 +71,54 @@ export default function Datenschutz() {
         </p>
       </section>
 
-      {/* 5 — Cookies */}
+      {/* 5 — Google Analytics */}
       <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-3">5. Cookies</h2>
-        <p>
-          {/*
-            IMPORTANT: If NO analytics/tracking cookies are used (default for this template),
-            state that clearly. If cookies ARE used (e.g. Matomo, Google Analytics),
-            you MUST add a cookie consent banner BEFORE any cookie is set.
-            ePrivacy-Richtlinie + DSGVO require opt-in consent for non-essential cookies.
-          */}
-          Diese Website verwendet ausschließlich technisch notwendige Cookies (Session-Cookies des
-          Hosting-Anbieters). Es werden keine Analyse- oder Tracking-Cookies eingesetzt.
-          Eine Einwilligung ist daher nicht erforderlich.
+        <h2 className="text-xl font-semibold mb-3">5. Google Analytics</h2>
+        <p className="mb-3">
+          Diese Website nutzt Google Analytics, einen Webanalysedienst der Google Ireland Limited,
+          Gordon House, Barrow Street, Dublin 4, Irland. Google Analytics verwendet Cookies, die
+          eine Analyse der Benutzung der Website ermöglichen.
         </p>
-        {/*
-          IF you add analytics later, you MUST:
-          1. Add cookie consent banner (e.g. Cookiebot, cookie-consent npm package)
-          2. Block all tracking scripts until consent is given
-          3. Add this section describing each cookie and its purpose
-          4. Offer opt-out mechanism
-        */}
+        <p className="mb-3">
+          Die durch den Cookie erzeugten Informationen über Ihre Nutzung dieser Website (einschließlich
+          Ihrer IP-Adresse) werden an einen Server von Google in den USA übertragen und dort gespeichert.
+          Google ist nach dem EU-US Data Privacy Framework zertifiziert.
+        </p>
+        <p className="mb-3">
+          Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Google Analytics wird erst nach
+          Ihrer ausdrücklichen Zustimmung per Cookie-Banner geladen. Sie können Ihre Einwilligung jederzeit
+          widerrufen, indem Sie den Browser-Speicher (localStorage) leeren oder unsere Website im
+          Inkognito-Modus besuchen.
+        </p>
+        <p className="mb-3">
+          Einwilligung jederzeit widerrufen:{" "}
+          <CookieRevoke
+            label="Cookie-Einstellungen zurücksetzen"
+            className="underline hover:text-gray-700"
+          />
+          {" "}— danach erscheint der Cookie-Banner erneut.
+        </p>
+        <p>
+          Datenschutzerklärung Google:{" "}
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            policies.google.com/privacy
+          </a>
+          {" — "}
+          Opt-out Add-on:{" "}
+          <a
+            href="https://tools.google.com/dlpage/gaoptout"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            tools.google.com/dlpage/gaoptout
+          </a>
+        </p>
       </section>
 
       {/* 6 — SSL/TLS */}

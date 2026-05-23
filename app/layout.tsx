@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import { Barlow_Condensed, Space_Grotesk, Inter } from "next/font/google"
 import ScrollReset from "@/components/ScrollReset"
+import GoogleAnalytics from "@/components/GoogleAnalytics"
+import CookieBanner from "@/components/CookieBanner"
 import "./globals.css"
 
 const barlow = Barlow_Condensed({
@@ -134,8 +136,10 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col antialiased" suppressHydrationWarning>
+        <GoogleAnalytics />
         <ScrollReset />
         {children}
+        <CookieBanner />
       </body>
     </html>
   )

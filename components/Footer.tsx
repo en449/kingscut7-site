@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import CookieRevoke from "@/components/CookieRevoke"
 
 export default function Footer() {
   return (
@@ -48,6 +49,11 @@ export default function Footer() {
           >
             Datenschutz
           </Link>
+          <CookieRevoke
+            label="Cookie-Einstellungen"
+            className="text-xs uppercase tracking-widest transition-colors duration-200"
+            style={{ fontFamily: "var(--font-ui)", color: "var(--color-text-faint)" }}
+          />
         </div>
 
         {/* Instagram + Copyright */}
