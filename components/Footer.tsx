@@ -16,16 +16,13 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-6">
 
         {/* Brand logo */}
-        <div className="relative h-6 w-[110px]">
+        <div className="relative h-14 w-[240px]">
           <Image
             src="/images/KINGSCUT7_Logo.png"
             alt="KINGSCUT7"
             fill
             className="object-contain"
-            style={{
-              mixBlendMode: "screen",
-              filter: "drop-shadow(0 0 4px #FFB100) drop-shadow(0 0 10px rgba(255,140,0,0.4))",
-            }}
+            style={{ mixBlendMode: "screen" }}
           />
         </div>
 
