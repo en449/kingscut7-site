@@ -5,22 +5,28 @@ import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion"
 
 const reviews = [
   {
-    name: "Konrad Weber",
-    text: "Bester Friseur in Hannover.",
+    name: "Luca Denk",
+    text: "Das war der beste Friseurbesuch seit Langem. Es gibt keinen besseren in Hannover.",
     stars: 5,
-    initials: "KW",
+    initials: "LD",
   },
   {
-    name: "Philipp Naujok",
-    text: "Absolut zu empfehlen. Sehr sauber geschnitten und sehr geile Atmosphäre im Laden.",
+    name: "Me. Calls",
+    text: "Wunderbarer Empfang, sehr freundliches Personal und top Service. Vielen Dank und gerne wieder!",
     stars: 5,
-    initials: "PN",
+    initials: "MC",
   },
   {
     name: "Cosmo",
-    text: "Wurde herzlich empfangen, Termin pünktlich eingehalten. Alles sauber desinfiziert. Die Atmosphäre Top, der Haarschnitt noch besser als erwartet.",
+    text: "Wurde herzlich empfangen und mein Termin wurde zeitgemäß eingehalten. Die Arbeitsflächen sowie die Maschinen waren sauber und desinfiziert! Die Atmosphäre Top, der Haarschnitt am Ende noch besser als erwartet.",
     stars: 5,
     initials: "CO",
+  },
+  {
+    name: "Erik 23",
+    text: "Sehr sympathischer Friseur der meinen Wunsch perfekt umgesetzt hat!",
+    stars: 5,
+    initials: "ER",
   },
   {
     name: "Hamza",
@@ -29,16 +35,10 @@ const reviews = [
     initials: "HA",
   },
   {
-    name: "devin",
-    text: "Sehr saubere Schnitt, sehr nette Gespräche, sehr zu empfehlen!!!",
+    name: "Philipp Naujok",
+    text: "Absolut zu empfehlen. Sehr sauber geschnitten und sehr geile Atmosphäre im Laden.",
     stars: 5,
-    initials: "DE",
-  },
-  {
-    name: "Sam Almnla",
-    text: "Er hat richtig gut geschnitten, passt auf was ihr euch wünscht. Sehr gut gemacht, voll chillig und nicht mal teuer — ich würde gerne immer kommen.",
-    stars: 5,
-    initials: "SA",
+    initials: "PN",
   },
 ]
 
@@ -119,7 +119,7 @@ export default function Reviews() {
               className="text-xs uppercase tracking-widest"
               style={{ fontFamily: "var(--font-ui)", color: "var(--color-text-muted)" }}
             >
-              11 Bewertungen
+              18 Bewertungen
             </span>
           </div>
         </motion.div>
