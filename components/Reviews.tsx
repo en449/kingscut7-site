@@ -119,7 +119,7 @@ export default function Reviews() {
               className="text-xs uppercase tracking-widest"
               style={{ fontFamily: "var(--font-ui)", color: "var(--color-text-muted)" }}
             >
-              18 Bewertungen
+              20 Bewertungen
             </span>
           </div>
         </motion.div>
