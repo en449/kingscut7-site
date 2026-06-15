@@ -7,10 +7,14 @@ import { motion, AnimatePresence } from "framer-motion"
 const PROMO_IMAGE = "/images/promo/promo.jpg"
 const SESSION_KEY = "kc7_promo_seen"
 
+// Popup deactivated — set to true to re-enable the entry popup.
+const PROMO_ENABLED = false
+
 export default function PromoPopup() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
+    if (!PROMO_ENABLED) return
     if (sessionStorage.getItem(SESSION_KEY)) return
     const t = setTimeout(() => setVisible(true), 900)
     return () => clearTimeout(t)

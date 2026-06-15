@@ -7,7 +7,7 @@ import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion"
 const founders = [
   { name: "Hasib", role: "Barber" },
   { name: "Moeez", role: "Gründer / Barber" },
-  { name: "Toni",  role: "Barber" },
+  { name: "Secil", role: "Meisterin" },
 ]
 
 export default function TeamSection() {
@@ -62,7 +62,7 @@ export default function TeamSection() {
         >
           <Image
             src="/images/team/opening-day.jpg"
-            alt="KINGSCUT7 Eröffnungstag — Hasib, Moeez und Toni"
+            alt="KINGSCUT7 Eröffnungstag — Hasib, Moeez und Secil"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 1152px"
