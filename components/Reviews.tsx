@@ -5,6 +5,24 @@ import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion"
 
 const reviews = [
   {
+    name: "Mani",
+    text: "Sehr gute Arbeit vom Friseur, absolut empfehlenswert.",
+    stars: 5,
+    initials: "MA",
+  },
+  {
+    name: "Amo 053",
+    text: "Top Laden & der Friseur kann jeden Haarschnitt perfekt schneiden.",
+    stars: 5,
+    initials: "AM",
+  },
+  {
+    name: "ATAR SHOP",
+    text: "Sehr schön der Laden und beste Friseure von Hannover",
+    stars: 5,
+    initials: "AS",
+  },
+  {
     name: "Luca Denk",
     text: "Das war der beste Friseurbesuch seit Langem. Es gibt keinen besseren in Hannover.",
     stars: 5,
@@ -18,7 +36,7 @@ const reviews = [
   },
   {
     name: "Cosmo",
-    text: "Wurde herzlich empfangen und mein Termin wurde zeitgemäß eingehalten. Die Arbeitsflächen sowie die Maschinen waren sauber und desinfiziert! Die Atmosphäre Top, der Haarschnitt am Ende noch besser als erwartet.",
+    text: "Wurde herzlich empfangen und mein Termin wurde zeitgemäß eingehalten. Die Arbeitsflächen sowie die Maschinen waren sauber und desinfiziert! Die Atmosphäre Top, der Haarschnitt am Ende noch besser als erwartet. Ich komme gerne nochmal wieder!",
     stars: 5,
     initials: "CO",
   },
@@ -119,7 +137,7 @@ export default function Reviews() {
               className="text-xs uppercase tracking-widest"
               style={{ fontFamily: "var(--font-ui)", color: "var(--color-text-muted)" }}
             >
-              20 Bewertungen
+              27 Bewertungen
             </span>
           </div>
         </motion.div>

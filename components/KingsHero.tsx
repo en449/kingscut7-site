@@ -179,7 +179,7 @@ export default function KingsHero() {
                 className="text-xs uppercase tracking-wider"
                 style={{ fontFamily: "var(--font-ui)", color: "var(--color-text-muted)" }}
               >
-                5,0 · 11 Bewertungen · Google
+                5,0 · 27 Bewertungen · Google
               </span>
             </motion.div>
           </motion.div>

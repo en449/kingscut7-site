@@ -5,7 +5,7 @@ import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion"
 
 const items = [
   { value: "5,0", label: "Google Sterne" },
-  { value: "11", label: "Bewertungen" },
+  { value: "27", label: "Bewertungen" },
   { value: "Mo–Sa", label: "09–19 Uhr" },
   { value: "Berliner Allee 62", label: "Hannover" },
 ]
