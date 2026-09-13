@@ -1,17 +1,30 @@
 "use client"
 
+import type React from "react"
 import { motion } from "framer-motion"
+import HeroVideo from "@/components/HeroVideo"
 import { staggerContainer, fadeUp, ctaButton } from "@/lib/motion"
 
 const WA_LINK = "https://wa.me/4915567073622"
+
+// --color-text-muted is #7A7A8A, which clears AA on the flat background by a hair (4.77:1)
+// and fails over any video at all. Lifted for the hero only; every other section still sits
+// on flat #07070A, where the original tone is fine.
+const heroSurface = {
+  background: "var(--color-bg)",
+  ["--color-text-muted" as string]: "#B0B0C0",
+} as React.CSSProperties
 
 export default function KingsHero() {
   return (
     <section
       className="relative min-h-screen flex items-center overflow-hidden pt-[72px]"
-      style={{ background: "var(--color-bg)" }}
+      style={heroSurface}
     >
       {/* ── Background layers ── */}
+
+      {/* Barbershop b-roll + the scrim that keeps the text readable over it */}
+      <HeroVideo />
 
       {/* Radial glow behind logo/title area */}
       <div
