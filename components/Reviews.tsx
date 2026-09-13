@@ -178,11 +178,12 @@ export default function Reviews() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
+          id="bewertungen-liste"
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
         >
           {reviews.map((r, i) => (
             <motion.div
-              key={r.name}
+              key={i}
               variants={fadeUp}
               className={`${cardVisibility(i, expanded)} flex-col gap-4 p-6 rounded-sm`}
               style={{
@@ -230,7 +231,7 @@ export default function Reviews() {
               type="button"
               onClick={() => setExpanded((v) => !v)}
               aria-expanded={expanded}
-              aria-controls="bewertungen"
+              aria-controls="bewertungen-liste"
               className="inline-flex items-center gap-3 px-8 py-4 text-sm font-semibold uppercase tracking-widest rounded-sm cursor-pointer"
               style={{
                 fontFamily: "var(--font-ui)",
