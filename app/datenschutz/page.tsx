@@ -18,10 +18,10 @@ export default function Datenschutz() {
         <p>
           Verantwortlicher im Sinne der DSGVO:<br />
           [VORNAME NACHNAME / FIRMENNAME]<br />
-          [STRAßE HAUSNUMMER]<br />
-          [PLZ] Hannover<br />
+          Berliner Allee 62<br />
+          30175 Hannover<br />
           E-Mail: [EMAIL]<br />
-          Telefon: [PHONE]
+          Telefon: 0511 33772496
         </p>
       </section>
 
@@ -148,7 +148,7 @@ export default function Datenschutz() {
       </section>
 
       <p className="text-sm text-gray-500 mt-12">
-        Stand: [MONTH YEAR] — Bei Änderungen an dieser Website wird diese Erklärung aktualisiert.
+        Stand: September 2026 — Bei Änderungen an dieser Website wird diese Erklärung aktualisiert.
       </p>
     </main>
   )

@@ -55,14 +55,14 @@ export default function Impressum() {
               Steuernummer
             </h2>
             <p>
-              Steuernummer: [STEUERNUMMER EINTRAGEN]<br />
+              Steuernummer: (beantragt)<br />
               {/* USt-IdNr.: DE[USTIDNR] — wenn vorhanden */}
             </p>
           </section>
 
           <section>
             <h2 className="text-sm uppercase tracking-widest mb-3 font-semibold" style={{ fontFamily: "var(--font-ui)", color: "var(--color-text)" }}>
-              Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+              Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
             </h2>
             <p>
               [VOLLSTÄNDIGER NAME]<br />
