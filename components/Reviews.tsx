@@ -5,10 +5,10 @@ import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion"
 
 const reviews = [
   {
-    name: "Mani",
+    name: "Aman Mehmood",
     text: "Sehr gute Arbeit vom Friseur, absolut empfehlenswert.",
     stars: 5,
-    initials: "MA",
+    initials: "AM",
   },
   {
     name: "Amo 053",
@@ -57,6 +57,24 @@ const reviews = [
     text: "Absolut zu empfehlen. Sehr sauber geschnitten und sehr geile Atmosphäre im Laden.",
     stars: 5,
     initials: "PN",
+  },
+  {
+    name: "Hristo Kostadinov",
+    text: "Super Haarschnitt und sehr sympathisch.",
+    stars: 5,
+    initials: "HK",
+  },
+  {
+    name: "Aihem El Safar",
+    text: "Guter Friseur, top Service, immer wieder gerne",
+    stars: 5,
+    initials: "AE",
+  },
+  {
+    name: "Konrad Weber",
+    text: "Bester Friseur in Hannover",
+    stars: 5,
+    initials: "KW",
   },
 ]
 
@@ -137,7 +155,7 @@ export default function Reviews() {
               className="text-xs uppercase tracking-widest"
               style={{ fontFamily: "var(--font-ui)", color: "var(--color-text-muted)" }}
             >
-              27 Bewertungen
+              30 Bewertungen
             </span>
           </div>
         </motion.div>

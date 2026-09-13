@@ -4,10 +4,13 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion"
 
-const galleryImages: { src: string; alt: string }[] = [
+const galleryImages: { src: string; alt: string; position?: string }[] = [
   { src: "/images/gallery/cut-01.jpg", alt: "Haarschnitt von KINGSCUT7" },
   { src: "/images/gallery/cut-02.jpg", alt: "Fade von KINGSCUT7" },
   { src: "/images/gallery/cut-03.jpg", alt: "Cut von KINGSCUT7" },
+  { src: "/images/gallery/cut-04.jpg", alt: "Taper Fade mit Rasur-Design von KINGSCUT7 in Hannover", position: "center 68%" },
+  { src: "/images/gallery/cut-05.jpg", alt: "Skin Fade mit sauberem Bartübergang von KINGSCUT7 in Hannover" },
+  { src: "/images/gallery/cut-06.jpg", alt: "Curly Top mit Taper Fade und Bart von KINGSCUT7 in Hannover" },
 ]
 
 export default function GallerySection() {
@@ -72,6 +75,7 @@ export default function GallerySection() {
                 alt={img.alt}
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-105"
+                style={{ objectPosition: img.position ?? "center" }}
                 sizes="(max-width: 768px) 50vw, 33vw"
               />
             </motion.div>
