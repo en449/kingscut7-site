@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { motion } from "framer-motion"
 import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion"
 
@@ -78,6 +79,15 @@ const reviews = [
   },
 ]
 
+// Collapsed the section shows 3 cards on phones, 4 at sm (2 rows), 6 from lg (2 rows).
+// Everything else waits behind the toggle.
+function cardVisibility(index: number, expanded: boolean) {
+  if (expanded || index < 3) return "flex"
+  if (index === 3) return "hidden sm:flex"
+  if (index < 6) return "hidden lg:flex"
+  return "hidden"
+}
+
 function Stars({ count }: { count: number }) {
   return (
     <div className="flex gap-0.5">
@@ -91,6 +101,8 @@ function Stars({ count }: { count: number }) {
 }
 
 export default function Reviews() {
+  const [expanded, setExpanded] = useState(false)
+
   return (
     <section
       id="bewertungen"
@@ -168,11 +180,11 @@ export default function Reviews() {
           viewport={viewportOnce}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
         >
-          {reviews.map((r) => (
+          {reviews.map((r, i) => (
             <motion.div
               key={r.name}
               variants={fadeUp}
-              className="flex flex-col gap-4 p-6 rounded-sm"
+              className={`${cardVisibility(i, expanded)} flex-col gap-4 p-6 rounded-sm`}
               style={{
                 background: "var(--color-bg)",
                 border: "1px solid var(--color-border)",
@@ -210,6 +222,42 @@ export default function Reviews() {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* Show-more toggle */}
+        {reviews.length > 3 && (
+          <div className="mt-10 text-center">
+            <button
+              type="button"
+              onClick={() => setExpanded((v) => !v)}
+              aria-expanded={expanded}
+              aria-controls="bewertungen"
+              className="inline-flex items-center gap-3 px-8 py-4 text-sm font-semibold uppercase tracking-widest rounded-sm cursor-pointer"
+              style={{
+                fontFamily: "var(--font-ui)",
+                background: "transparent",
+                border: "1px solid rgba(255,177,0,0.35)",
+                color: "var(--color-neon)",
+              }}
+            >
+              {expanded ? "Weniger anzeigen" : "Mehr Bewertungen anzeigen"}
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                aria-hidden
+                style={{
+                  transform: expanded ? "rotate(180deg)" : "none",
+                  transition: "transform 0.25s ease",
+                }}
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+          </div>
+        )}
       </div>
     </section>
   )
