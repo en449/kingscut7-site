@@ -38,15 +38,42 @@ export default function Datenschutz() {
         {/* NOTE: If using Vercel Analytics, add separate section for that */}
       </section>
 
-      {/* 3 — Kontaktformular */}
+      {/* 3 — Kontaktaufnahme per Telefon und WhatsApp */}
       <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-3">3. Kontaktformular</h2>
+        <h2 className="text-xl font-semibold mb-3">3. Kontaktaufnahme per Telefon und WhatsApp</h2>
         <p>
-          Bei Nutzung des Kontaktformulars werden Ihre Angaben (Name, Telefon, Nachricht) zur
-          Bearbeitung der Anfrage und für eventuelle Anschlussfragen gespeichert.
-          Grundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO.
-          Daten werden nicht ohne Einwilligung an Dritte weitergegeben.
-          {/* If using Formspree/Resend/etc., add: "Formulardaten werden verarbeitet durch [ANBIETER]." */}
+          Diese Website enthält kein Kontaktformular. Termine und Anfragen laufen über Telefon
+          oder WhatsApp.
+        </p>
+        <p className="mt-3">
+          Wenn Sie uns anrufen oder per WhatsApp schreiben, verarbeiten wir die dabei übermittelten
+          Daten (Rufnummer, Profilname, Inhalt und Zeitpunkt Ihrer Nachricht) ausschließlich zur
+          Bearbeitung Ihrer Anfrage und zur Terminvereinbarung. Rechtsgrundlage: Art. 6 Abs. 1 lit. b
+          DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der
+          Beantwortung von Anfragen). Wir löschen die Daten, sobald sie für diesen Zweck nicht mehr
+          erforderlich sind und keine gesetzlichen Aufbewahrungsfristen entgegenstehen.
+        </p>
+        <p className="mt-3">
+          Die WhatsApp-Schaltflächen auf dieser Website sind reine Links. Es werden keine
+          WhatsApp-Inhalte in diese Website eingebunden und beim bloßen Aufruf der Seite keine Daten
+          an WhatsApp übertragen. Eine Übermittlung findet erst statt, wenn Sie den Link anklicken
+          und den Chat selbst starten.
+        </p>
+        <p className="mt-3">
+          Anbieter des Dienstes ist <strong>WhatsApp Ireland Limited</strong>, Merrion Road,
+          Dublin 4, D04 X2K5, Irland. WhatsApp Ireland Limited ist Teil der Meta-Unternehmensgruppe
+          und gibt Daten an <strong>Meta Platforms, Inc.</strong> in den USA weiter. Auf die
+          Verarbeitung Ihrer Daten durch WhatsApp haben wir keinen Einfluss; sie erfolgt in
+          WhatsApps eigener Verantwortung. Welche Daten WhatsApp dabei erhebt, entnehmen Sie der{" "}
+          <a
+            href="https://www.whatsapp.com/legal/privacy-policy-eea"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            Datenschutzrichtlinie von WhatsApp
+          </a>
+          . Wenn Sie das vermeiden möchten, erreichen Sie uns telefonisch unter 0511 33772496.
         </p>
       </section>
 

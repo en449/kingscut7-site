@@ -63,8 +63,8 @@ export const metadata: Metadata = {
   other: {
     "geo.region": "DE-NI",
     "geo.placename": "Hannover",
-    "geo.position": "52.3703;9.7371",
-    "ICBM": "52.3703, 9.7371",
+    "geo.position": "52.37036;9.75199",
+    "ICBM": "52.37036, 9.75199",
   },
 }
 
@@ -87,8 +87,8 @@ const localBusinessSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 52.3703,
-    longitude: 9.7371,
+    latitude: 52.37036,
+    longitude: 9.75199,
   },
   openingHoursSpecification: [
     {
