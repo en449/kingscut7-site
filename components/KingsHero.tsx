@@ -19,7 +19,7 @@ const heroSurface = {
 export default function KingsHero() {
   return (
     <section
-      className="relative min-h-screen flex items-center overflow-hidden pt-[72px]"
+      className="relative min-h-svh flex items-center overflow-hidden pt-[72px]"
       style={heroSurface}
     >
       {/* ── Background layers ── */}
@@ -68,7 +68,7 @@ export default function KingsHero() {
       />
 
       {/* ── Main content ── */}
-      <div className="relative w-full max-w-6xl mx-auto px-6 md:px-10 lg:px-16 py-20 md:py-0 min-h-screen flex items-center">
+      <div className="relative w-full max-w-6xl mx-auto px-6 md:px-10 lg:px-16 py-10 md:py-0 min-h-svh flex items-center">
         <div className="w-full">
 
           {/* ─── Text ─── */}
@@ -81,7 +81,7 @@ export default function KingsHero() {
             {/* Location badge */}
             <motion.p
               variants={fadeUp}
-              className="text-xs uppercase tracking-[0.4em] mb-8 flex items-center gap-3"
+              className="text-xs uppercase tracking-[0.22em] md:tracking-[0.4em] mb-4 md:mb-8 flex items-center gap-3"
               style={{ fontFamily: "var(--font-ui)", color: "var(--color-text-muted)" }}
             >
               <span
@@ -97,10 +97,10 @@ export default function KingsHero() {
               style={{ fontFamily: "var(--font-display)", fontWeight: 900 }}
             >
               {/* Mobile: 4 lines */}
-              <span className="block md:hidden text-[clamp(4rem,11vw,9rem)] leading-none" style={{ color: "var(--color-text)" }}>KINGS</span>
-              <span className="block md:hidden text-[clamp(4rem,11vw,9rem)] leading-none neon-text">WERDEN</span>
-              <span className="block md:hidden text-[clamp(4rem,11vw,9rem)] leading-none" style={{ color: "var(--color-text)" }}>NICHT</span>
-              <span className="block md:hidden text-[clamp(4rem,11vw,9rem)] leading-none" style={{ color: "var(--color-text)" }}>GEBOREN.</span>
+              <span className="block md:hidden text-[clamp(3.2rem,11vw,9rem)] leading-none" style={{ color: "var(--color-text)" }}>KINGS</span>
+              <span className="block md:hidden text-[clamp(3.2rem,11vw,9rem)] leading-none neon-text">WERDEN</span>
+              <span className="block md:hidden text-[clamp(3.2rem,11vw,9rem)] leading-none" style={{ color: "var(--color-text)" }}>NICHT</span>
+              <span className="block md:hidden text-[clamp(3.2rem,11vw,9rem)] leading-none" style={{ color: "var(--color-text)" }}>GEBOREN.</span>
 
               {/* Desktop: 2 lines */}
               <span className="hidden md:block text-[clamp(4rem,8vw,7rem)] leading-[1.05]" style={{ color: "var(--color-text)" }}>
@@ -113,7 +113,7 @@ export default function KingsHero() {
 
             <motion.p
               variants={fadeUp}
-              className="mt-4 mb-3 text-[clamp(1.6rem,4.5vw,2.4rem)] font-bold uppercase tracking-[0.12em]"
+              className="mt-3 md:mt-4 mb-2 md:mb-3 text-[clamp(1.45rem,4.5vw,2.4rem)] font-bold uppercase tracking-[0.12em]"
               style={{
                 fontFamily: "var(--font-display)",
                 color: "var(--color-text-muted)",
@@ -124,7 +124,7 @@ export default function KingsHero() {
 
             <motion.p
               variants={fadeUp}
-              className="text-[14px] mb-10"
+              className="text-[14px] mb-5 md:mb-10"
               style={{
                 color: "var(--color-text-muted)",
                 fontFamily: "var(--font-body)",
@@ -132,13 +132,15 @@ export default function KingsHero() {
                 maxWidth: "34ch",
               }}
             >
-              Precision Cuts · Fade Specialists · Bart &amp; Styling.
-              <br />
+              <span className="hidden md:inline">
+                Precision Cuts · Fade Specialists · Bart &amp; Styling.
+                <br />
+              </span>
               Mo–Sa 09–19 Uhr. Kein Warten — Termin per WhatsApp oder online über Treatwell.
             </motion.p>
 
             {/* CTAs */}
-            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row flex-wrap gap-2 mb-14">
+            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row flex-wrap gap-2 mb-8 md:mb-14">
               {/* PRIMARY: WhatsApp */}
               <motion.a
                 href={WA_LINK}
