@@ -104,8 +104,8 @@ export default function Nav() {
               </a>
             </li>
 
-            {/* WhatsApp CTA */}
-            <li>
+            {/* The two booking CTAs sit as one pair, closer to each other than to the nav */}
+            <li className="flex items-center gap-2">
               <motion.a
                 href={WA_LINK}
                 target="_blank"
@@ -127,10 +127,8 @@ export default function Nav() {
                 </svg>
                 Termin
               </motion.a>
-            </li>
 
-            {/* Treatwell — second booking path, deliberately outlined next to the green pill */}
-            <li>
+              {/* Treatwell — second booking path, deliberately outlined next to the green pill */}
               <TreatwellButton label="Treatwell" size="sm" />
             </li>
           </ul>

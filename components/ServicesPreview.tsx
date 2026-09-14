@@ -154,7 +154,7 @@ export default function ServicesPreview() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ delay: 0.3, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-12 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4"
+          className="mt-12 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3"
         >
           <a
             href="https://wa.me/4915567073622"

@@ -138,7 +138,7 @@ export default function KingsHero() {
             </motion.p>
 
             {/* CTAs */}
-            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row flex-wrap gap-3 mb-14">
+            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row flex-wrap gap-2 mb-14">
               {/* PRIMARY: WhatsApp */}
               <motion.a
                 href={WA_LINK}

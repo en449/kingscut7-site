@@ -36,8 +36,8 @@ export default function TreatwellButton({
       target="_blank"
       rel="noopener noreferrer"
       {...ctaButton}
-      className={`inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold uppercase tracking-widest rounded-sm ${
-        sm ? "px-4 py-2 text-xs" : "px-8 py-4 text-sm"
+      className={`inline-flex items-center justify-center whitespace-nowrap font-semibold uppercase tracking-widest rounded-sm ${
+        sm ? "gap-1.5 px-3 py-[7px] text-xs" : "gap-2 px-5 py-4 text-sm"
       } ${className}`}
       style={{
         fontFamily: "var(--font-ui)",

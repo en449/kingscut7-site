@@ -85,7 +85,7 @@ export default function BookingCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.18 }}
-          className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3"
         >
           <motion.a
             href={WA_LINK}
