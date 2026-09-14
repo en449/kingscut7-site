@@ -53,12 +53,11 @@ export default function Nav() {
           <Link href="/" aria-label="KINGSCUT7 Startseite">
             <div className="relative h-14 w-[240px]" style={{ flexShrink: 0 }}>
               <Image
-                src="/images/KINGSCUT7_Logo.png"
+                src="/images/KINGSCUT7_Logo_alpha.png"
                 alt="KINGSCUT7"
                 fill
                 className="object-contain"
                 priority
-                style={{ mixBlendMode: "screen" }}
               />
             </div>
           </Link>

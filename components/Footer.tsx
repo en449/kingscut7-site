@@ -19,11 +19,10 @@ export default function Footer() {
         {/* Brand logo */}
         <div className="relative h-14 w-[240px]">
           <Image
-            src="/images/KINGSCUT7_Logo.png"
+            src="/images/KINGSCUT7_Logo_alpha.png"
             alt="KINGSCUT7"
             fill
             className="object-contain"
-            style={{ mixBlendMode: "screen" }}
           />
         </div>
 
