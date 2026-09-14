@@ -118,6 +118,7 @@ const localBusinessSchema = {
   },
   sameAs: [
     "https://www.instagram.com/kings.cut7/",
+    "https://www.treatwell.de/ort/kingscut7-1/",
   ],
 }
 

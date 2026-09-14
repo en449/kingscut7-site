@@ -3,6 +3,7 @@
 import type React from "react"
 import { motion } from "framer-motion"
 import HeroVideo from "@/components/HeroVideo"
+import TreatwellButton from "@/components/TreatwellButton"
 import { staggerContainer, fadeUp, ctaButton } from "@/lib/motion"
 
 const WA_LINK = "https://wa.me/4915567073622"
@@ -133,11 +134,11 @@ export default function KingsHero() {
             >
               Precision Cuts · Fade Specialists · Bart &amp; Styling.
               <br />
-              Mo–Sa 09–19 Uhr. Kein Warten — Termin per WhatsApp.
+              Mo–Sa 09–19 Uhr. Kein Warten — Termin per WhatsApp oder online über Treatwell.
             </motion.p>
 
             {/* CTAs */}
-            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-3 mb-14">
+            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row flex-wrap gap-3 mb-14">
               {/* PRIMARY: WhatsApp */}
               <motion.a
                 href={WA_LINK}
@@ -158,6 +159,9 @@ export default function KingsHero() {
                 </svg>
                 Jetzt Termin sichern
               </motion.a>
+
+              {/* SECONDARY: Treatwell */}
+              <TreatwellButton label="Treatwell" />
 
               {/* SECONDARY: Call */}
               <motion.a

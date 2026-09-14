@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
+import TreatwellButton from "@/components/TreatwellButton"
 
 const navLinks = [
   { href: "/#leistungen", label: "Leistungen" },
@@ -63,7 +64,7 @@ export default function Nav() {
           </Link>
 
           {/* Desktop nav */}
-          <ul className="hidden md:flex items-center gap-7">
+          <ul className="hidden lg:flex items-center gap-7">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
@@ -128,12 +129,17 @@ export default function Nav() {
                 Termin
               </motion.a>
             </li>
+
+            {/* Treatwell — second booking path, deliberately outlined next to the green pill */}
+            <li>
+              <TreatwellButton label="Treatwell" size="sm" />
+            </li>
           </ul>
 
           {/* Mobile hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden flex flex-col gap-[5px] p-2"
+            className="lg:hidden flex flex-col gap-[5px] p-2"
             aria-label={menuOpen ? "Menü schließen" : "Menü öffnen"}
           >
             <motion.span
@@ -213,6 +219,7 @@ export default function Nav() {
                 </svg>
                 Jetzt Termin buchen
               </a>
+              <TreatwellButton label="Online über Treatwell" className="w-full" />
               <a
                 href="tel:+4951133772496"
                 className="flex items-center justify-center gap-3 py-4 rounded-sm text-sm font-semibold uppercase tracking-widest"

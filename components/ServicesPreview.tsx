@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion"
+import TreatwellButton from "@/components/TreatwellButton"
 
 const services = [
   {
@@ -153,7 +154,7 @@ export default function ServicesPreview() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ delay: 0.3, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-12 text-center"
+          className="mt-12 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4"
         >
           <a
             href="https://wa.me/4915567073622"
@@ -172,6 +173,8 @@ export default function ServicesPreview() {
             </svg>
             Termin per WhatsApp buchen
           </a>
+
+          <TreatwellButton />
         </motion.div>
       </div>
     </section>

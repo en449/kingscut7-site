@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ctaButton, viewportOnce } from "@/lib/motion"
+import TreatwellButton from "@/components/TreatwellButton"
 
 const WA_LINK = "https://wa.me/4915567073622"
 
@@ -76,7 +77,7 @@ export default function BookingCTA() {
             maxWidth: "42ch",
           }}
         >
-          Schreib uns einfach auf WhatsApp — wir antworten schnell und finden gemeinsam den perfekten Termin für dich.
+          Schreib uns einfach auf WhatsApp — wir antworten schnell und finden gemeinsam den perfekten Termin für dich. Lieber selbst online buchen? Geht auch über Treatwell.
         </motion.p>
 
         <motion.div
@@ -84,7 +85,7 @@ export default function BookingCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.18 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4"
         >
           <motion.a
             href={WA_LINK}
@@ -105,6 +106,8 @@ export default function BookingCTA() {
             </svg>
             Jetzt auf WhatsApp schreiben
           </motion.a>
+
+          <TreatwellButton />
 
           <motion.a
             href="tel:+4951133772496"

@@ -3,6 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import CookieRevoke from "@/components/CookieRevoke"
+import TreatwellButton from "@/components/TreatwellButton"
 
 export default function Footer() {
   return (
@@ -27,7 +28,7 @@ export default function Footer() {
         </div>
 
         {/* Legal links */}
-        <div className="flex items-center gap-6">
+        <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2">
           <Link
             href="/impressum"
             className="text-xs uppercase tracking-widest transition-colors duration-200"
@@ -53,8 +54,9 @@ export default function Footer() {
           />
         </div>
 
-        {/* Instagram + Copyright */}
-        <div className="flex items-center gap-4">
+        {/* Booking + Instagram + Copyright */}
+        <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
+          <TreatwellButton label="Treatwell" size="sm" />
           <a
             href="https://www.instagram.com/kings.cut7/"
             target="_blank"

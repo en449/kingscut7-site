@@ -40,10 +40,10 @@ export default function Datenschutz() {
 
       {/* 3 — Kontaktaufnahme per Telefon und WhatsApp */}
       <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-3">3. Kontaktaufnahme per Telefon und WhatsApp</h2>
+        <h2 className="text-xl font-semibold mb-3">3. Kontaktaufnahme per Telefon, WhatsApp und Treatwell</h2>
         <p>
-          Diese Website enthält kein Kontaktformular. Termine und Anfragen laufen über Telefon
-          oder WhatsApp.
+          Diese Website enthält kein Kontaktformular. Termine und Anfragen laufen über Telefon,
+          WhatsApp oder die Online-Terminbuchung bei Treatwell.
         </p>
         <p className="mt-3">
           Wenn Sie uns anrufen oder per WhatsApp schreiben, verarbeiten wir die dabei übermittelten
@@ -74,6 +74,25 @@ export default function Datenschutz() {
             Datenschutzrichtlinie von WhatsApp
           </a>
           . Wenn Sie das vermeiden möchten, erreichen Sie uns telefonisch unter 0511 33772496.
+        </p>
+        <p className="mt-3">
+          Auch die Treatwell-Schaltflächen sind reine Links. Beim Aufruf dieser Website werden
+          keine Daten an Treatwell übertragen; es sind keine Treatwell-Inhalte eingebunden. Erst
+          wenn Sie den Link anklicken, gelangen Sie auf das Buchungsportal von{" "}
+          <strong>Treatwell DACH GmbH</strong>, Greifswalder Straße 212, 10405 Berlin. Die dortige
+          Verarbeitung Ihrer Daten — etwa der Angaben, die Sie für eine Buchung eingeben — erfolgt
+          in eigener Verantwortung von Treatwell. Einzelheiten dazu finden Sie in den{" "}
+          <a
+            href="https://www.treatwell.de/info/datenschutz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            Datenschutzbestimmungen von Treatwell
+          </a>
+          . Über eine dort eingegangene Buchung erhalten wir von Treatwell die zur Durchführung
+          des Termins erforderlichen Angaben (Name, Kontaktdaten, gebuchte Leistung, Termin) und
+          verarbeiten diese auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO.
         </p>
       </section>
 
