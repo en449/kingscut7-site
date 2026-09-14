@@ -17,10 +17,10 @@ export default function Datenschutz() {
         <h2 className="text-xl font-semibold mb-3">1. Verantwortlicher</h2>
         <p>
           Verantwortlicher im Sinne der DSGVO:<br />
-          [VORNAME NACHNAME / FIRMENNAME]<br />
+          KINGSCUT7, Inhaber: Moeez Iftikhar<br />
           Berliner Allee 62<br />
           30175 Hannover<br />
-          E-Mail: [EMAIL]<br />
+          E-Mail: <a href="mailto:moeezif77@gmail.com" className="underline">moeezif77@gmail.com</a><br />
           Telefon: 0511 33772496
         </p>
       </section>

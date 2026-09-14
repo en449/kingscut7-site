@@ -32,8 +32,8 @@ export default function Impressum() {
               Angaben gemäß § 5 TMG
             </h2>
             <p>
-              {/* TODO: Inhaber vollständigen Namen eintragen */}
-              [VOLLSTÄNDIGER NAME DES INHABERS]<br />
+              KINGSCUT7<br />
+              Inhaber: Moeez Iftikhar<br />
               Berliner Allee 62<br />
               30175 Hannover<br />
               Deutschland
@@ -46,7 +46,7 @@ export default function Impressum() {
             </h2>
             <p>
               Telefon: <a href="tel:+4951133772496" style={{ color: "var(--color-neon)" }}>0511 33772496</a><br />
-              E-Mail: <a href="mailto:[EMAIL]" style={{ color: "var(--color-neon)" }}>[EMAIL EINTRAGEN]</a>
+              E-Mail: <a href="mailto:moeezif77@gmail.com" style={{ color: "var(--color-neon)" }}>moeezif77@gmail.com</a>
             </p>
           </section>
 
@@ -65,7 +65,7 @@ export default function Impressum() {
               Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
             </h2>
             <p>
-              [VOLLSTÄNDIGER NAME]<br />
+              Moeez Iftikhar<br />
               Berliner Allee 62<br />
               30175 Hannover
             </p>
