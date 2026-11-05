@@ -6,58 +6,58 @@ import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion"
 
 const reviews = [
   {
-    name: "Aman Mehmood",
-    text: "Sehr gute Arbeit vom Friseur, absolut empfehlenswert.",
+    name: "D Kahl",
+    text: "Richtig sauber rasiert. Ab jetzt neuer Stammkunde. Hier bekommt man sogar einen Kaffee angeboten. Top. Komme wieder!",
     stars: 5,
-    initials: "AM",
+    initials: "DK",
   },
   {
-    name: "Amo 053",
-    text: "Top Laden & der Friseur kann jeden Haarschnitt perfekt schneiden.",
+    name: "Gulsher Khan",
+    text: "Absolut empfehlenswert. Es war mein erster Besuch, aber ganz sicher nicht mein letzter. Herr Haseeb war sehr nett und hat seine Arbeit perfekt erledigt.",
     stars: 5,
-    initials: "AM",
+    initials: "GK",
   },
   {
-    name: "ATAR SHOP",
-    text: "Sehr schön der Laden und beste Friseure von Hannover",
+    name: "Nicolas Brumm",
+    text: "Sehr guter Friseure immer nett und immer zufrieden",
     stars: 5,
-    initials: "AS",
+    initials: "NB",
   },
   {
-    name: "Luca Denk",
-    text: "Das war der beste Friseurbesuch seit Langem. Es gibt keinen besseren in Hannover.",
+    name: "arman norouzi",
+    text: "War jetzt schon mehrmals bei Kingscut7 und bin jedes Mal sehr zufrieden. Super freundliches Team, angenehme Atmosphäre und vor allem wird sauber und präzise gearbeitet. Die Jungs nehmen sich Zeit und gehen auf die Wünsche genau ein. Für mich definitiv der beste Barbershop – kann ich nur weiterempfehlen!",
     stars: 5,
-    initials: "LD",
+    initials: "AN",
   },
   {
-    name: "Me. Calls",
-    text: "Wunderbarer Empfang, sehr freundliches Personal und top Service. Vielen Dank und gerne wieder!",
+    name: "Abdullah",
+    text: "Der Laden war sehr sauber und die Mitarbeiter waren sehr Nett. Preise waren angemessen und man hat sich dort wohlgefühlt. Man hat auch gemerkt, dass sie Ahnung von ihrer Arbeit hatten.",
     stars: 5,
-    initials: "MC",
+    initials: "AB",
   },
   {
-    name: "Cosmo",
-    text: "Wurde herzlich empfangen und mein Termin wurde zeitgemäß eingehalten. Die Arbeitsflächen sowie die Maschinen waren sauber und desinfiziert! Die Atmosphäre Top, der Haarschnitt am Ende noch besser als erwartet. Ich komme gerne nochmal wieder!",
+    name: "Naim Ramirez",
+    text: "Ich springe seit 2 Jahren von Friseur zu Friseur, kann jetzt aber mit Sicherheit sagen das ich den richtigen Laden gefunden habe. Die Jungs leisten Top Arbeit und setzen jeden Wunsch um.",
     stars: 5,
-    initials: "CO",
+    initials: "NR",
   },
   {
-    name: "Erik 23",
-    text: "Sehr sympathischer Friseur der meinen Wunsch perfekt umgesetzt hat!",
+    name: "Muhammad Zayde",
+    text: "Sehr zuvorkommende und professionelle Jungs. Sie haben mich beraten und mir ein guten Haarschnitt verpasst, gerne wieder.",
+    stars: 5,
+    initials: "MZ",
+  },
+  {
+    name: "Emi Racer",
+    text: "Sehr guter Service und sehr zu empfehlen. Top Preis-Leistungs Verhältnis",
     stars: 5,
     initials: "ER",
   },
   {
-    name: "Hamza",
-    text: "Einer der besten Herrenfriseure in Hannover! ✌️",
+    name: "Luai Ouni03",
+    text: "Bester Friseur laden in Hannover, kann ich nur weiterempfehlen.",
     stars: 5,
-    initials: "HA",
-  },
-  {
-    name: "Philipp Naujok",
-    text: "Absolut zu empfehlen. Sehr sauber geschnitten und sehr geile Atmosphäre im Laden.",
-    stars: 5,
-    initials: "PN",
+    initials: "LO",
   },
   {
     name: "Hristo Kostadinov",
@@ -66,10 +66,70 @@ const reviews = [
     initials: "HK",
   },
   {
+    name: "ATAR SHOP",
+    text: "Sehr schön der Laden und beste Friseure von Hannover",
+    stars: 5,
+    initials: "AS",
+  },
+  {
+    name: "Amo 053",
+    text: "Top Laden & der Friseur kann jeden Haarschnitt perfekt schneiden.",
+    stars: 5,
+    initials: "AM",
+  },
+  {
+    name: "Aman Mehmood",
+    text: "Sehr gute Arbeit vom Friseur, absolut empfehlenswert.",
+    stars: 5,
+    initials: "AM",
+  },
+  {
     name: "Aihem El Safar",
     text: "Guter Friseur, top Service, immer wieder gerne",
     stars: 5,
     initials: "AE",
+  },
+  {
+    name: "Erik 23",
+    text: "Sehr sympathischer Friseur der meinen Wunsch perfekt umgesetzt hat!",
+    stars: 5,
+    initials: "ER",
+  },
+  {
+    name: "Cosmo",
+    text: "Wurde herzlich empfangen und mein Termin wurde zeitgemäß eingehalten. Die Arbeitsflächen sowie die Maschinen waren sauber und desinfiziert! Die Atmosphäre Top, der Haarschnitt am Ende noch besser als erwartet. Ich komme gerne nochmal wieder!",
+    stars: 5,
+    initials: "CO",
+  },
+  {
+    name: "Philipp Naujok",
+    text: "Absolut zu empfehlen. Sehr sauber geschnitten und sehr geile Atmosphäre im Laden.",
+    stars: 5,
+    initials: "PN",
+  },
+  {
+    name: "Me. Calls",
+    text: "Wunderbarer Empfang, sehr freundliches Personal und top Service. Vielen Dank und gerne wieder!",
+    stars: 5,
+    initials: "MC",
+  },
+  {
+    name: "Luca Denk",
+    text: "Das war der beste Friseurbesuch seit Langem. Es gibt keinen besseren in Hannover.",
+    stars: 5,
+    initials: "LD",
+  },
+  {
+    name: "Hamza",
+    text: "Einer der besten Herrenfriseure in Hannover! ✌️",
+    stars: 5,
+    initials: "HA",
+  },
+  {
+    name: "devin",
+    text: "Sehr saubere Schnitt, sehr nette Gespräche, sehr zu empfehlen!!!",
+    stars: 5,
+    initials: "DE",
   },
   {
     name: "Konrad Weber",
@@ -167,7 +227,7 @@ export default function Reviews() {
               className="text-xs uppercase tracking-widest"
               style={{ fontFamily: "var(--font-ui)", color: "var(--color-text-muted)" }}
             >
-              30 Bewertungen
+              47 Bewertungen
             </span>
           </div>
         </motion.div>
