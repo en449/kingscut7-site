@@ -40,6 +40,8 @@
   --success-100: #10292a;
   --primary-100: #2a2312;
   --primary-200: #ffb100; /* Planity's purple accent → site gold */
+  --primary-50: #2a2312;
+  --surface-secondary: #17171f; /* loyalty card in "Mein Konto" */
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   color: var(--color-text);
@@ -106,6 +108,36 @@
 .planity-host [class*="distant_availabilities-module_container"],
 .planity-host [class*="list-module_tabs"] {
   background-color: var(--pl-surface) !important;
+}
+
+/* Surfaces Planity hard-codes as #fff/#f0f0f0 instead of var(--white) — the palette remap
+   can't reach them, and the forced light text turned them white-on-white (the "Meinem
+   Kalender hinzufügen" menu, 2026-11-18). Found by scanning app.latest.js for light
+   backgrounds; re-scan after a widget update. */
+.planity-host [class*="add_to_calendar-module_drawer"],
+.planity-host [class*="service-module_alternateColors"],
+.planity-host [class*="tag-module_selectMobile"],
+.planity-host [class*="customers_reviews-module_reviewsGrid"],
+.planity-host [class*="planity_gift_voucher_purchase_page-module_"],
+.planity-host .react-datepicker__time-container .react-datepicker__time,
+.planity-host .react-datepicker__year-dropdown,
+.planity-host .react-datepicker__month-dropdown,
+.planity-host .react-datepicker__month-year-dropdown,
+.planity-host .react-datepicker__today-button {
+  background: var(--pl-surface) !important;
+}
+.planity-host [class*="add_to_calendar-module_drawer"] {
+  border: 1px solid var(--pl-line) !important;
+  border-radius: 8px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6) !important;
+}
+.planity-host [class*="planity_gift_voucher_purchase_page-module_amountOptionSelected"],
+.planity-host .react-datepicker__day:hover,
+.planity-host .react-datepicker__month-text:hover,
+.planity-host .react-datepicker__day--keyboard-selected,
+.planity-host .react-datepicker__day--in-selecting-range,
+.planity-host .react-datepicker__time-list-item:hover {
+  background: rgba(255, 177, 0, 0.14) !important;
 }
 
 /* Modal (24 h cancellation notice) and its backdrop. */
