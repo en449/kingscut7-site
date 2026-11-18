@@ -79,10 +79,24 @@ export default function Datenschutz() {
           Für die Online-Terminbuchung binden wir auf der Seite „Termin buchen“ (/termin) das
           Buchungsmodul von <strong>Planity</strong> ein. Das Modul wird nur auf dieser Seite
           geladen, nicht auf den übrigen Seiten dieser Website. Beim Aufruf von /termin lädt Ihr
-          Browser das Modul von Servern von Planity und deren Dienstleistern (u. a. Amazon Web
-          Services, CloudFront); dabei werden technisch notwendige Daten wie Ihre IP-Adresse,
-          Browsertyp und Zeitpunkt des Abrufs übermittelt. Ohne diese Übermittlung kann das
-          Buchungsmodul nicht angezeigt werden.
+          Browser das Modul von Servern von Planity und deren Dienstleistern; dabei werden
+          technisch notwendige Daten wie Ihre IP-Adresse, Browsertyp und Zeitpunkt des Abrufs
+          übermittelt. Ohne diese Übermittlung kann das Buchungsmodul nicht angezeigt werden.
+          Nach unserer Prüfung nutzt das Modul dafür insbesondere Amazon Web Services (CloudFront,
+          Auslieferung des Moduls), Google Firebase (Datenbank für freie Termine und Anmeldung,
+          u. a. Server-Region Belgien) und Algolia (Suchdienst). Amazon Web Services und Google
+          haben ihren Sitz bzw. ihre Muttergesellschaft in den USA; eine Übermittlung in die USA
+          ist daher nicht auszuschließen. Beide Unternehmen sind nach dem EU-US Data Privacy
+          Framework zertifiziert.
+        </p>
+        <p className="mt-3">
+          Das Buchungsmodul setzt nach unserer Prüfung keine Cookies. Es speichert im lokalen
+          Speicher Ihres Browsers (localStorage bzw. IndexedDB) technisch notwendige Angaben für die
+          Verbindung zu den Planity-Servern und — wenn Sie sich bei Planity anmelden — Ihre
+          Anmeldung. Diese Speicherung ist für die von Ihnen ausdrücklich gewünschte Online-Buchung
+          unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG) und erfolgt daher ohne Einwilligung über
+          den Cookie-Banner. Sie können diese Daten jederzeit löschen, indem Sie die Websitedaten
+          für kingscut7.de in Ihrem Browser entfernen.
         </p>
         <p className="mt-3">
           Wenn Sie einen Termin buchen, geben Sie Ihre Angaben (z. B. Name, Telefonnummer,
@@ -90,9 +104,8 @@ export default function Datenschutz() {
           Planity speichert diese Angaben und stellt uns die zur Durchführung des Termins
           erforderlichen Daten bereit. Für die Anmeldung bzw. das Kundenkonto bei Planity gelten
           zusätzlich die Bestimmungen von Planity. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
-          (Durchführung vorvertraglicher Maßnahmen bzw. des Vertrags); das Laden des Moduls auf
-          /termin ist für den von Ihnen ausdrücklich gewünschten Dienst — die Online-Buchung —
-          erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Einzelheiten zur Verarbeitung durch Planity
+          (Durchführung vorvertraglicher Maßnahmen bzw. des Vertrags). Einzelheiten zur
+          Verarbeitung durch Planity
           finden Sie in der{" "}
           <a
             href="https://www.planity.com/de-DE/privacy-policy"
