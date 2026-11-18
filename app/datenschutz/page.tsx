@@ -77,7 +77,8 @@ export default function Datenschutz() {
         </p>
         <p className="mt-3">
           Für die Online-Terminbuchung binden wir auf der Seite „Termin buchen“ (/termin) das
-          Buchungsmodul von <strong>Planity</strong> ein. Das Modul wird nur auf dieser Seite
+          Buchungsmodul der <strong>Planity GmbH</strong>, Christophstraße 15–17, 50670 Köln
+          (HRB 111877, Amtsgericht Köln), ein. Das Modul wird nur auf dieser Seite
           geladen, nicht auf den übrigen Seiten dieser Website. Beim Aufruf von /termin lädt Ihr
           Browser das Modul von Servern von Planity und deren Dienstleistern; dabei werden
           technisch notwendige Daten wie Ihre IP-Adresse, Browsertyp und Zeitpunkt des Abrufs
@@ -126,9 +127,14 @@ export default function Datenschutz() {
           Planity speichert diese Angaben und stellt uns die zur Durchführung des Termins
           erforderlichen Daten bereit. Für die Anmeldung bzw. das Kundenkonto bei Planity gelten
           zusätzlich die Bestimmungen von Planity. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
-          (Durchführung vorvertraglicher Maßnahmen bzw. des Vertrags). Einzelheiten zur
-          Verarbeitung durch Planity
-          finden Sie in der{" "}
+          (Durchführung vorvertraglicher Maßnahmen bzw. des Vertrags). Planity ist für die
+          meisten dieser Verarbeitungen selbst Verantwortlicher; für bestimmte Verarbeitungen
+          sind Planity und wir gemeinsam verantwortlich (Art. 26 DSGVO). Den wesentlichen Inhalt
+          dieser Vereinbarung erhalten Sie bei Planity unter kontakt@planity.com; Ihre Rechte
+          können Sie bei Planity und bei uns geltend machen. Den Datenschutzbeauftragten von
+          Planity erreichen Sie unter dpo@planity.com. Nach Angaben von Planity werden die Daten
+          auf Servern in der Europäischen Union gespeichert. Einzelheiten zur Verarbeitung durch
+          Planity finden Sie in der{" "}
           <a
             href="https://www.planity.com/de-DE/privacy-policy"
             target="_blank"
