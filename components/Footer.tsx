@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import CookieRevoke from "@/components/CookieRevoke"
-import TreatwellButton from "@/components/TreatwellButton"
+import BookingButton from "@/components/BookingButton"
 
 export default function Footer() {
   return (
@@ -55,7 +55,7 @@ export default function Footer() {
 
         {/* Booking + Instagram + Copyright */}
         <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
-          <TreatwellButton label="Treatwell" size="sm" />
+          <BookingButton label="Online buchen" size="sm" />
           <a
             href="https://www.instagram.com/kings.cut7/"
             target="_blank"

@@ -40,10 +40,10 @@ export default function Datenschutz() {
 
       {/* 3 — Kontaktaufnahme per Telefon und WhatsApp */}
       <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-3">3. Kontaktaufnahme per Telefon, WhatsApp und Treatwell</h2>
+        <h2 className="text-xl font-semibold mb-3">3. Kontakt per Telefon und WhatsApp; Online-Terminbuchung (Planity)</h2>
         <p>
           Diese Website enthält kein Kontaktformular. Termine und Anfragen laufen über Telefon,
-          WhatsApp oder die Online-Terminbuchung bei Treatwell.
+          WhatsApp oder die Online-Terminbuchung auf unserer Seite „Termin buchen“ (/termin).
         </p>
         <p className="mt-3">
           Wenn Sie uns anrufen oder per WhatsApp schreiben, verarbeiten wir die dabei übermittelten
@@ -76,23 +76,34 @@ export default function Datenschutz() {
           . Wenn Sie das vermeiden möchten, erreichen Sie uns telefonisch unter 0511 33772496.
         </p>
         <p className="mt-3">
-          Auch die Treatwell-Schaltflächen sind reine Links. Beim Aufruf dieser Website werden
-          keine Daten an Treatwell übertragen; es sind keine Treatwell-Inhalte eingebunden. Erst
-          wenn Sie den Link anklicken, gelangen Sie auf das Buchungsportal von{" "}
-          <strong>Treatwell DACH GmbH</strong>, Greifswalder Straße 212, 10405 Berlin. Die dortige
-          Verarbeitung Ihrer Daten — etwa der Angaben, die Sie für eine Buchung eingeben — erfolgt
-          in eigener Verantwortung von Treatwell. Einzelheiten dazu finden Sie in den{" "}
+          Für die Online-Terminbuchung binden wir auf der Seite „Termin buchen“ (/termin) das
+          Buchungsmodul von <strong>Planity</strong> ein. Das Modul wird nur auf dieser Seite
+          geladen, nicht auf den übrigen Seiten dieser Website. Beim Aufruf von /termin lädt Ihr
+          Browser das Modul von Servern von Planity und deren Dienstleistern (u. a. Amazon Web
+          Services, CloudFront); dabei werden technisch notwendige Daten wie Ihre IP-Adresse,
+          Browsertyp und Zeitpunkt des Abrufs übermittelt. Ohne diese Übermittlung kann das
+          Buchungsmodul nicht angezeigt werden.
+        </p>
+        <p className="mt-3">
+          Wenn Sie einen Termin buchen, geben Sie Ihre Angaben (z. B. Name, Telefonnummer,
+          E-Mail-Adresse, gewünschte Leistung, Barber und Termin) direkt in das Planity-Modul ein.
+          Planity speichert diese Angaben und stellt uns die zur Durchführung des Termins
+          erforderlichen Daten bereit. Für die Anmeldung bzw. das Kundenkonto bei Planity gelten
+          zusätzlich die Bestimmungen von Planity. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
+          (Durchführung vorvertraglicher Maßnahmen bzw. des Vertrags); das Laden des Moduls auf
+          /termin ist für den von Ihnen ausdrücklich gewünschten Dienst — die Online-Buchung —
+          erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Einzelheiten zur Verarbeitung durch Planity
+          finden Sie in der{" "}
           <a
-            href="https://www.treatwell.de/info/datenschutz/"
+            href="https://www.planity.com/de-DE/privacy-policy"
             target="_blank"
             rel="noopener noreferrer"
             className="underline"
           >
-            Datenschutzbestimmungen von Treatwell
+            Datenschutzerklärung von Planity
           </a>
-          . Über eine dort eingegangene Buchung erhalten wir von Treatwell die zur Durchführung
-          des Termins erforderlichen Angaben (Name, Kontaktdaten, gebuchte Leistung, Termin) und
-          verarbeiten diese auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO.
+          . Wenn Sie das vermeiden möchten, buchen Sie Ihren Termin einfach telefonisch unter
+          0511 33772496.
         </p>
       </section>
 
@@ -194,7 +205,7 @@ export default function Datenschutz() {
       </section>
 
       <p className="text-sm text-gray-500 mt-12">
-        Stand: September 2026 — Bei Änderungen an dieser Website wird diese Erklärung aktualisiert.
+        Stand: November 2026 — Bei Änderungen an dieser Website wird diese Erklärung aktualisiert.
       </p>
     </main>
   )
