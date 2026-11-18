@@ -45,8 +45,10 @@
 
   ::selection { background: var(--color-neon); color: var(--color-bg); }
 
-  ::-webkit-scrollbar { width: 3px; }
+  /* height too: horizontal scrollbars (Planity's mobile tab row) got a 16px black track */
+  ::-webkit-scrollbar { width: 3px; height: 3px; }
   ::-webkit-scrollbar-track { background: var(--color-bg); }
+  .planity-host ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: var(--color-neon); }
 
   h1, h2, h3, h4 {
