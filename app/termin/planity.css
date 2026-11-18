@@ -1,0 +1,287 @@
+/*
+ * Dark KINGSCUT7 skin for the Planity white-label widget (only loaded on /termin).
+ * Planity ships light-theme CSS and documents "override our classes, use !important".
+ * Selectors match the class PREFIX ([class*="button-module_primary"]) or Planity's stable
+ * planity_* names, never the hashed suffix (-Careb), so a widget rebuild doesn't break it.
+ * Mapped on 2026-11-18: services list, calendar, cancellation modal, login/sign-up form.
+ * Not seen yet: booking confirmation, "Mein Konto" — covered by the palette remap below,
+ * but check them after a real test booking.
+ */
+
+.planity-host {
+  --pl-surface: #111118;
+  --pl-raised: #17171f;
+  --pl-input: #0b0b10;
+  --pl-line: #2c2c3c;
+  --pl-muted: #8e8e9e; /* site muted #7A7A8A misses 4.5:1 on the raised panels */
+
+  /* Planity paints its panels from its own :root palette (background: var(--white) ×150,
+     var(--grey-100/200) ×120, incl. the phone-only white panels). Redefining it here darkens
+     every Planity surface inside the widget — also screens we could not open (confirmation,
+     account) — without naming their classes. Text colour is forced separately below.
+     grey-700/800/900 stay dark: Planity uses them as fills under white text. */
+  --white: #111118;
+  --grey-100: #17171f;
+  --grey-200: #1d1d27;
+  --grey-300: #2c2c3c;
+  --grey-400: #44445a;
+  --grey-500: #8e8e9e;
+  --grey-600: #a8a8b8;
+  --grey-700: #2a2a36;
+  --focus-color: rgba(255, 177, 0, 0.5);
+  /* Status tints (error / warning / info banners, failed-booking messages) are pastel fills
+     in Planity; under our forced light text they'd be unreadable. Dark tints instead. */
+  --danger-50: #2a1416;
+  --danger-100: #3d171b;
+  --error-50: #2a1416;
+  --error-200: #3d171b;
+  --warning-50: #2a2312;
+  --warning-100: #3a2e10;
+  --success-100: #10292a;
+  --primary-100: #2a2312;
+  --primary-200: #ffb100; /* Planity's purple accent → site gold */
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+/* Base: everything inherits the site's text colour, font and border colour. */
+.planity-host * {
+  color: var(--color-text) !important;
+  border-color: var(--pl-line) !important;
+  font-family: var(--font-body) !important;
+}
+
+/* Step and section headings in the site's display face. */
+.planity-host h1,
+.planity-host h2,
+.planity-host h3 {
+  font-family: var(--font-display) !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Secondary text: durations, "ODER", reCAPTCHA note, placeholders. */
+.planity-host [class*="duration"],
+.planity-host [class*="Duration"],
+.planity-host [class*="module_or-"],
+.planity-host [class*="recaptchaLink"],
+.planity-host [class*="recaptchaLink"] ~ *,
+.planity-host input::placeholder {
+  color: var(--pl-muted) !important;
+}
+.planity-host [class*="module_price-"],
+.planity-host [class*="module_price-"] * {
+  color: var(--color-neon-bright) !important;
+}
+
+/* Accent (Planity's purple step numbers and links) → gold. */
+.planity-host [class*="title-module_index"],
+.planity-host a {
+  color: var(--color-neon) !important;
+}
+
+/* Cards and panels. */
+/* "service_set-module_card-" with the dash: the bare prefix also hits cardWrapper and every
+   row's inner service-module_card, which stacked boxes inside boxes. */
+.planity-host [class*="service_set-module_card-"],
+.planity-host [class*="module_bookingService"],
+.planity-host [class*="step-module_timetable"],
+.planity-host [class*="booking_auth-module_auth"],
+.planity-host [class*="select-module_container"],
+.planity-host [class*="icon_button-module_iconButton"] {
+  background: var(--pl-surface) !important;
+  border: 1px solid var(--pl-line) !important;
+  box-shadow: none !important;
+}
+
+/* Phone widths (<=767px): Planity's media queries paint these panels white. */
+.planity-host [class*="module_businessServices"],
+.planity-host [class*="cart-module_container"],
+.planity-host [class*="step-module_selection"],
+.planity-host [class*="service_item-module_bookingCart"],
+.planity-host [class*="service_item-module_card"],
+.planity-host [class*="signed_out-module_booking"],
+.planity-host [class*="distant_availabilities-module_container"],
+.planity-host [class*="list-module_tabs"] {
+  background-color: var(--pl-surface) !important;
+}
+
+/* Modal (24 h cancellation notice) and its backdrop. */
+.planity-host [class*="modal-module_container"] {
+  background: var(--color-surface) !important;
+  border: 1px solid rgba(255, 177, 0, 0.35) !important;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6) !important;
+}
+.planity-host [class*="modal-module_overlay"] {
+  background: rgba(7, 7, 10, 0.8) !important;
+}
+
+/* Buttons. Primary = filled gold, dark label. */
+.planity-host [class*="button-module_primary"]:not(:disabled):not([class*="isDisabled"]) {
+  background: var(--color-neon) !important;
+  border: 1px solid var(--color-neon) !important;
+}
+.planity-host [class*="button-module_primary"]:not(:disabled):not([class*="isDisabled"]),
+.planity-host [class*="button-module_primary"]:not(:disabled):not([class*="isDisabled"]) * {
+  color: var(--color-bg) !important;
+  font-weight: 600 !important;
+}
+.planity-host [class*="button-module_primary"]:not(:disabled):not([class*="isDisabled"]):hover {
+  background: var(--color-neon-bright) !important;
+}
+/* Secondary (the "Einen Termin buchen" / "Mein Konto" tabs), tertiary, white. */
+.planity-host [class*="button-module_secondary"]:not(:disabled):not([class*="isDisabled"]),
+.planity-host [class*="button-module_tertiary"]:not(:disabled):not([class*="isDisabled"]),
+.planity-host [class*="button-module_white"]:not(:disabled):not([class*="isDisabled"]) {
+  background: rgba(255, 177, 0, 0.06) !important;
+  border: 1px solid rgba(255, 177, 0, 0.35) !important;
+}
+.planity-host [class*="button-module_secondary"]:not(:disabled):not([class*="isDisabled"]):hover,
+.planity-host [class*="button-module_tertiary"]:not(:disabled):not([class*="isDisabled"]):hover,
+.planity-host [class*="button-module_white"]:not(:disabled):not([class*="isDisabled"]):hover {
+  background: rgba(255, 177, 0, 0.14) !important;
+}
+
+/* Calendar time slots. */
+.planity-host .planity_appointment_days_slider_hour_availability {
+  background: var(--pl-raised) !important;
+  border: 1px solid var(--pl-line) !important;
+}
+.planity-host .planity_appointment_days_slider_hour_availability:hover {
+  background: rgba(255, 177, 0, 0.14) !important;
+  border-color: rgba(255, 177, 0, 0.5) !important;
+}
+
+/* Form fields. */
+.planity-host .planity-inputs,
+.planity-host input,
+.planity-host select,
+.planity-host textarea {
+  background: var(--pl-input) !important;
+}
+.planity-host .planity-inputs {
+  border: 1px solid var(--pl-line) !important;
+}
+.planity-host .planity-inputs:focus-within {
+  border-color: var(--color-neon) !important;
+}
+.planity-host input:-webkit-autofill {
+  -webkit-text-fill-color: var(--color-text) !important;
+  box-shadow: 0 0 0 1000px var(--pl-input) inset !important;
+}
+.planity-host .planity_auth_input_cgu_box {
+  background: var(--pl-input) !important;
+  border: 1px solid var(--color-text-muted) !important;
+}
+
+/* Login/sign-up: the inner authentication box sits inside the bordered booking_auth panel.
+   Its own (formerly white-on-white) borders would draw a second frame and stray rules. */
+.planity-host [class*="authentication-module_"]:not(.planity-inputs):not([class*="button-module_"]) {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+/* No rule under the last service of each category. */
+.planity-host .planity_ui_item-list-element:last-child {
+  border-bottom-color: transparent !important;
+}
+
+
+/* Checked AGB box: gold fill so the tick stays visible on the dark box. */
+.planity-host input:checked ~ .planity_auth_input_cgu_box,
+.planity-host input:checked + .planity_auth_input_cgu_box {
+  background: var(--color-neon) !important;
+  border-color: var(--color-neon) !important;
+}
+.planity-host input:checked ~ .planity_auth_input_cgu_box *,
+.planity-host input:checked + .planity_auth_input_cgu_box * {
+  color: var(--color-bg) !important;
+}
+
+/* States the blanket colour rule above would flatten. Kept last so they win on order. */
+.planity-host :disabled,
+.planity-host [class*="isDisabled"],
+.planity-host [aria-disabled="true"],
+.planity-host .react-datepicker__day--disabled,
+.planity-host .react-datepicker__day--outside-month {
+  color: var(--pl-muted) !important;
+  opacity: 0.55;
+}
+/* The text sits in children that the blanket rule would turn white again. */
+.planity-host :disabled *,
+.planity-host [class*="isDisabled"] *,
+.planity-host .react-datepicker__day--disabled *,
+.planity-host .react-datepicker__day--outside-month * {
+  color: var(--pl-muted) !important;
+}
+.planity-host button:disabled,
+.planity-host button[class*="isDisabled"] {
+  background: var(--pl-raised) !important;
+  border-color: var(--pl-line) !important;
+  cursor: not-allowed;
+}
+/* Tabs ("Einen Termin buchen" / "Mein Konto"): the inactive one stays muted. */
+.planity-host [class*="list-module_item"]:not([aria-current="true"]) {
+  color: var(--pl-muted) !important;
+}
+
+/* Planity's UI icons hard-code a near-black stroke/fill (e.g. the password eye: stroke
+   #08080B). Recolour only icon-module icons — flags (flag-module) keep their colours. */
+.planity-host [class*="icon-module_icon"] svg [stroke]:not([stroke="none"]) {
+  stroke: currentColor !important;
+}
+.planity-host [class*="icon-module_icon"] svg [fill]:not([fill="none"]) {
+  fill: currentColor !important;
+}
+
+/* Date picker ("Kalender öffnen"). */
+.planity-host [class*="modal-module_datePickerModal"],
+.planity-host [class*="datepicker-module_DatePicker"],
+.planity-host [class*="date_picker-module_calendar"],
+.planity-host .react-datepicker,
+.planity-host .react-datepicker__header,
+.planity-host .react-datepicker__month-container {
+  background: var(--pl-surface) !important;
+  border-color: var(--pl-line) !important;
+}
+/* Planity draws the selected day as an inner circle (datepicker-module_selectedDay, grey-700);
+   the cell itself stays unset. Recolour the circle, not the cell. */
+.planity-host [class*="datepicker-module_selectedDay"] {
+  background: var(--color-neon) !important;
+}
+.planity-host [class*="datepicker-module_selectedDay"],
+.planity-host [class*="datepicker-module_selectedDay"] * {
+  color: var(--color-bg) !important;
+}
+
+/* Active tab underline (an ::after in near-black grey-900, invisible on dark). */
+.planity-host [class*="list-module_item"][aria-current="true"]::after {
+  background-color: var(--color-neon) !important;
+  border-color: var(--color-neon) !important;
+}
+
+/* Keyboard focus: visible on every control (Planity's own ring is a box-shadow). */
+.planity-host button:focus-visible,
+.planity-host a:focus-visible,
+.planity-host input:focus-visible {
+  outline: 2px solid var(--color-neon) !important;
+  outline-offset: 2px;
+}
+
+/* Radios (country picker, any payment choice): checked ring + dot in gold; Planity paints
+   them grey-700, which is dark-on-dark after the palette remap. */
+.planity-host input[type="radio"]:checked + span,
+.planity-host [class*="module_isSelected"] [class*="module_radio"] {
+  border-color: var(--color-neon) !important;
+}
+.planity-host input[type="radio"]:checked + span::after,
+.planity-host [class*="module_isSelected"] [class*="module_radio"]::after {
+  background: var(--color-neon) !important;
+}
+
+/* Today's date ring in the picker (an inset box-shadow in grey-700). */
+.planity-host [class*="datepicker-module_today"] {
+  box-shadow: 0 0 0 2px rgba(255, 177, 0, 0.6) inset !important;
+}

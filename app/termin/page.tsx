@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Nav from "@/components/Nav"
 import Footer from "@/components/Footer"
 import PlanityWidget from "@/components/PlanityWidget"
+import "./planity.css"
 
 export const metadata: Metadata = {
   // Keep the fallback page out of the index until the key is set in Vercel.

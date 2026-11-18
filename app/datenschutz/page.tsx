@@ -90,13 +90,35 @@ export default function Datenschutz() {
           Framework zertifiziert.
         </p>
         <p className="mt-3">
-          Das Buchungsmodul setzt nach unserer Prüfung keine Cookies. Es speichert im lokalen
-          Speicher Ihres Browsers (localStorage bzw. IndexedDB) technisch notwendige Angaben für die
-          Verbindung zu den Planity-Servern und — wenn Sie sich bei Planity anmelden — Ihre
-          Anmeldung. Diese Speicherung ist für die von Ihnen ausdrücklich gewünschte Online-Buchung
-          unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG) und erfolgt daher ohne Einwilligung über
-          den Cookie-Banner. Sie können diese Daten jederzeit löschen, indem Sie die Websitedaten
-          für kingscut7.de in Ihrem Browser entfernen.
+          Beim Laden der Seite und bei der Auswahl von Leistung und Termin setzt das Buchungsmodul
+          nach unserer Prüfung keine Cookies. Es speichert im lokalen Speicher Ihres Browsers
+          (localStorage bzw. IndexedDB) technisch notwendige Angaben für die Verbindung zu den
+          Planity-Servern und — wenn Sie sich bei Planity anmelden — Ihre Anmeldung. Diese
+          Speicherung ist für die von Ihnen ausdrücklich gewünschte Online-Buchung unbedingt
+          erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG) und erfolgt daher ohne Einwilligung über den
+          Cookie-Banner. Sie können diese Daten jederzeit löschen, indem Sie die Websitedaten für
+          kingscut7.de in Ihrem Browser entfernen.
+        </p>
+        <p className="mt-3">
+          Sobald Sie zum Schritt „Login“ (Anmeldung oder Registrierung bei Planity) gelangen, lädt
+          das Modul zum Schutz vor Missbrauch (z. B. automatisierten Registrierungen) den Dienst{" "}
+          <strong>Google reCAPTCHA</strong> der Google Ireland Limited, Gordon House, Barrow Street,
+          Dublin 4, Irland. reCAPTCHA wertet dabei Informationen wie Ihre IP-Adresse,
+          Browserangaben und Ihr Nutzungsverhalten auf der Seite aus und setzt das Cookie
+          „_GRECAPTCHA“ (Domain google.com, Speicherdauer bis zu 6 Monate). Eine Übermittlung an
+          Google LLC in den USA ist möglich; Google ist nach dem EU-US Data Privacy Framework
+          zertifiziert. Der Einsatz erfolgt durch Planity zur Absicherung der Anmeldung und ist für
+          die sichere Durchführung der von Ihnen gewünschten Buchung erforderlich (§ 25 Abs. 2
+          Nr. 2 TDDDG; Art. 6 Abs. 1 lit. f DSGVO). Einzelheiten:{" "}
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            Datenschutzerklärung von Google
+          </a>
+          .
         </p>
         <p className="mt-3">
           Wenn Sie einen Termin buchen, geben Sie Ihre Angaben (z. B. Name, Telefonnummer,

@@ -32,7 +32,7 @@ export default function PlanityWidget() {
     }
     window.planity = {
       key: PLANITY_KEY,
-      primaryColor: "#07070A", // gold on the white card fails contrast
+      primaryColor: "#FFB100",
       container: el,
       options: { countryCode: "DE" },
     }
@@ -63,14 +63,6 @@ export default function PlanityWidget() {
     )
   }
 
-  // Planity's styles are light-theme only and inherit our text colour, so the widget sits on
-  // its own light card instead of being re-skinned dark: every later step (calendar, form,
-  // login) keeps Planity's tested contrast without us overriding classes we can't all see.
-  return (
-    <div
-      ref={container}
-      className="planity-host min-h-[480px] rounded-sm px-4 py-6 sm:px-8 sm:py-8"
-      style={{ background: "#FFFFFF", color: "#202020", border: "1px solid rgba(255,177,0,0.35)" }}
-    />
-  )
+  // Planity ships light-theme styles only; app/termin/planity.css re-skins them dark.
+  return <div ref={container} className="planity-host min-h-[480px] rounded-sm px-4 py-6 sm:px-8 sm:py-8" />
 }
